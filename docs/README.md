@@ -94,6 +94,8 @@ description: 个人博客搭建
     git commit -m 'new branch'
     git push origin gh-pages
 
+    git checkout master
+    npm install
     git remote add origin git@github.com:linshanzeng/linshanzeng.github.io.git
     git branch -M main
     git push -u origin main

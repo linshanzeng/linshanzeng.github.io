@@ -85,6 +85,32 @@ description: 个人博客搭建
 
 9. 上传GitHub
 
+    ```sh
+    git checkout --orphan gh-pages
+    git rm -rf .
+    rm -rf *
+    echo '# new branch' >> README.md
+    git add README.md
+    git commit -m 'new branch'
+    git push origin gh-pages
+
+    git remote add origin git@github.com:linshanzeng/linshanzeng.github.io.git
+    git branch -M main
+    git push -u origin main
+
+    touch dp.sh
+    ```
+
+    ```sh
+    #!/bin/sh
+    echo '添加'
+    git add .
+    echo 'commit'
+    git commit -m 'deploy'
+    echo '推送中'
+    git push origin main
+    ```
+
 10. GitHub Pages+GitHub Actions部署
 
     ```sh

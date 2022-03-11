@@ -23,22 +23,6 @@ jobs:
           # 选择要使用的 node 版本
           node-version: '14'
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - uses: actions/cache@v1
-        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      
-      - name: Install project dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true' # Over here!
-        run: yarn --prefer-offline
-
       # 缓存 node_modules
       - name: Cache dependencies
         uses: actions/cache@v2
@@ -54,6 +38,22 @@ jobs:
       - name: Install dependencies
         if: steps.yarn-cache2.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - uses: actions/cache@v1
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      
+      - name: Install project dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true' # Over here!
+        run: yarn --prefer-offline
 
       # 运行构建脚本
       - name: Build VuePress site

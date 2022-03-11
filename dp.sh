@@ -1,4 +1,4 @@
-#!/bin/sh  
+#!/bin/sh   
 echo '添加'
 git add .
 echo 'commit'

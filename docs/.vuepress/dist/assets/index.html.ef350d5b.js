@@ -1,0 +1,1 @@
+import{o as e,c as o}from"./app.06f4e5ec.js";import{_ as r}from"./plugin-vue_export-helper.21dcd24c.js";const c={};function t(n,_){return e(),o("p",null,"foo-README.md")}var m=r(c,[["render",t]]);export{m as default};

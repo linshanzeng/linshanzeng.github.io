@@ -203,3 +203,4 @@ description: 个人博客搭建
 - [**Pro Git**](https://git-scm.com/book/zh/v2)
 - [**GitHub Page**](https://pages.github.com/)
 - [**error plugin is not found: @vuepress/plugin-search**](https://stackoverflow.com/questions/61010294/how-to-cache-yarn-packages-in-github-actions)
+- [*Vuepress + GitHub Actions 实现博客自动部署！***](https://juejin.cn/post/7000572105154625567)

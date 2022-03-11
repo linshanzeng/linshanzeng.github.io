@@ -1,4 +1,4 @@
-const path = require("path");
+const { path } = require('@vuepress/utils')
 
 module.exports = {
     // 站点配置
@@ -48,35 +48,49 @@ module.exports = {
         // 项目仓库的 URL
         repo: 'linshanzeng/linshanzeng.github.io',
         // 侧边栏
-        sidebar: [
-            // 所有页面会使用相同的侧边栏
-            // SidebarItem
-            {
-                text: 'VuePress参考',
-                link: '/foo/',
-                collapsible: true,
-                children: [
-                    // SiderbarItem
-                    {
-                        text: 'github',
-                        link: 'https://github.com',
-                        children: [],
-                    },
-                ],
-            },
+        // sidebar: [
+        //     // 所有页面会使用相同的侧边栏
+        //     // SidebarItem
+        //     {
+        //         text: 'VuePress参考',
+        //         link: '/foo/',
+        //         collapsible: true,
+        //         children: [
+        //             // SiderbarItem
+        //             {
+        //                 text: 'github',
+        //                 link: 'https://github.com',
+        //                 children: [],
+        //             },
+        //         ],
+        //     },
+        // ],
+        sidebar: {
             // 不同子路径下的页面会使用不同的侧边栏
-            {
-                '/foo/': [
-                    {
-                        text: '打包工具参考',
-                        children: [
-                            { text: 'Vite', link: '/foo/' },
-                            { text: 'Webpack', link: '/foo/' },
-                        ]
-                    },
-                ],
-            },
-        ],
+            '/foo/': [
+                {
+                    text: '打包工具参考',
+                    children: [
+                        { text: 'Vite', link: '/foo/' },
+                        { text: 'Webpack', link: '/foo/' },
+                    ]
+                },
+            ],
+            '/bar/': [
+                {
+                    text: '默认主题参考',
+                    children: [
+                        { 
+                            text: '基础配置', 
+                            children: [
+                                { text: 'locales', link: '/bar' },
+                            ] 
+                        },
+                        { text: 'Loales配置', link: '/foo/' },
+                    ]
+                }
+            ]
+        },
         // 设置根据页面标题自动生成的侧边栏的最大深度
         sidebarDepth: 2,
         // 编辑此页 链接的文字
@@ -112,8 +126,4 @@ module.exports = {
             }
         ]
     ],
-    clientAppEnhanceFiles: path.resolve(
-        __dirname,
-        './enhanceApp.js'
-    ),
 }

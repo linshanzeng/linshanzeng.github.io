@@ -86,9 +86,9 @@ module.exports = {
         // 文档源文件存放在仓库中的目录名
         docsDir: 'docs',
         // 最近更新时间戳 标签的文字
-        lastUpdatedText: '上次更新: ',
+        lastUpdatedText: '上次更新',
         // 贡献者列表 标签的文字
-        conibutorsText: '贡献者: ',
+        contributorsText: '贡献者',
         // 404 页面的提示信息
         notFound: ['没找到该网页', '你可能输错了', '要不换个链接重试下'],
         // 404 页面中 返回首页 链接的文字

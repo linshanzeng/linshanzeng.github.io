@@ -1,67 +1,67 @@
-function integrateGitalk (router) {
+import { defineClientAppEnhance } from '@vuepress/client'
+
+function integrateGitalk(router) {
     const linkGitalk = document.createElement('link');
     linkGitalk.href = 'https://unpkg.com/gitalk/dist/gitalk.css';
     linkGitalk.rel = 'stylesheet';
-    document.body.appendChild(linkGitalk);
     const scriptGitalk = document.createElement('script');
     scriptGitalk.src = 'https://unpkg.com/gitalk/dist/gitalk.min.js';
-    document.body.appendChild(scriptGitalk);
-    var path = '';
+    document.head.appendChild(linkGitalk);
+    document.head.appendChild(scriptGitalk)
 
-    router.afterEach((to) => {
+    router.afterEach((to, from) => {
+        if (to.path === from.path && to.path !== '/')
+            return
         if (scriptGitalk.onload) {
-            setTimeout(loadGitalk, 5, to)
+            setTimeout(() => {
+                createGitalk(to.path)
+            }, 500)
         } else {
             scriptGitalk.onload = () => {
-                loadGitalk(to.fullPath);
+                createGitalk(to.path)
             }
         }
-    });
-
-    function loadGitalk (to) {
-        if (to.path !== path) {
-            path = to.path;
-            let commentsContainer = document.getElementById('gitalk-container');
-            const $page = document.querySelector('.page');
-            console.log($page);
-            if (commentsContainer && $page) {
-                $page.removeChild(commentsContainer)
-            }
-            commentsContainer = document.createElement('div');
-            commentsContainer.id = 'gitalk-container';
-            commentsContainer.classList.add('content');
-            if ($page) {
-                $page.appendChild(commentsContainer);
-                if (typeof Gitalk !== 'undefined' && Gitalk instanceof Function) {
-                    console.log("评论正在加载中");
-                    renderGitalk();
-                }
-            }
-        }
-    }
-    function renderGitalk () {
-        // 如果url路径有中文则使用decodeURIComponent，否则可以直接使用location.pathname
-        console.log(location.pathname);
-        const path = decodeURIComponent(location.pathname)
-        const gitalk = new Gitalk({
-            clientID: 'e3f18a1e6913213f2460',
-            clientSecret: 'e0adfeb32809259e9f3f7f4e0c1e0eeb05fd00af',
-            repo: 'linshanzeng.github.io',
-            owner: 'linshanzeng',
-            admin: ['linshanzeng'],
-            title: path.split('/').pop() || path,
-            id: path,      // 唯一，并且长度小于50
-            language: 'zh-CN',
-        });
-        gitalk.render('gitalk-container');
-    }
-    window.loadGitalk = loadGitalk;
+    })
 }
 
-export default ({ Vue, options, router }) => {
+function createGitalk(path) {
+    const $page = document.querySelector('.page')
+    console.log("$page", path);
+    // gitalk容器
+    let container = document.getElementById('gitalk-container');
+    //container存在删除
+    if (container) {
+        container.parentNode.removeChild(container)
+    }
+    container = document.createElement('div')
+    container.id = 'gitalk-container'
+    container.classList.add('content')
+    if ($page) {
+        $page.appendChild(container);
+        if (typeof Gitalk !== 'undefined' && Gitalk instanceof Function) {
+            renderGitalk(path)
+        }
+    }
+}
+
+function renderGitalk(fullPath) {
+    const gitalk = new Gitalk({
+        clientID: 'e3f18a1e6913213f2460',
+        clientSecret: 'e0adfeb32809259e9f3f7f4e0c1e0eeb05fd00af',
+        repo: 'linshanzeng.github.io',
+        owner: 'linshanzeng',
+        admin: ['linshanzeng'],
+        id: fullPath.slice(1, -5),
+        distractionFreeMode: false,
+        language: 'zh-CN',
+    });
+    gitalk.render('gitalk-container');
+}
+
+export default defineClientAppEnhance(({ app, router, siteData }) => {
     try {
         document && integrateGitalk(router)
     } catch (e) {
-        console.error(e.message)
+        console.error('e', e.message)
     }
-}
+})

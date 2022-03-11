@@ -202,3 +202,4 @@ description: 个人博客搭建
 - [**Git小抄**](https://training.github.com/downloads/zh_CN/github-git-cheat-sheet/)
 - [**Pro Git**](https://git-scm.com/book/zh/v2)
 - [**GitHub Page**](https://pages.github.com/)
+- [**error plugin is not found: @vuepress/plugin-search**](https://stackoverflow.com/questions/61010294/how-to-cache-yarn-packages-in-github-actions)

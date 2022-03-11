@@ -98,7 +98,7 @@ module.exports = {
     },
     plugins: [
         [
-            // 搜索框
+            // 搜索
             '@vuepress/plugin-search',
             {
                 locales: {
@@ -107,8 +107,13 @@ module.exports = {
                         placeholder: '搜索',
                     },
                 },
+                // 排除首页
                 isSearchable: (page) => page.path !== '/',
             }
         ]
-    ]
+    ],
+    clientAppEnhanceFiles: path.resolve(
+        __dirname,
+        './enhanceApp.js'
+    ),
 }

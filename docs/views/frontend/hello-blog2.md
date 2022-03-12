@@ -7,7 +7,7 @@ tags:
  - 实战
 ---
 
-使用vuepress-theme-reco博客主题的高级功能，Gitalk实现评论
+使用vuepress-theme-reco博客主题的高级功能，Vssue实现评论
 
 <!-- more -->
 

@@ -1,7 +1,7 @@
 // config.js
 module.exports = {
-    title: '个人博客',
-    description: '个人博客',
+    title: '技术博客',
+    description: '技术博客',
     theme: 'reco',
     locales: {
         '/': {
@@ -20,8 +20,9 @@ module.exports = {
         author: 'linshanzeng',
         // logo: '/avatar.png', // 导航栏左侧的图片
         nav: [
-            { text: '首页', link: '/' },
-            { text: '时间轴', link: '/TimeLine/' },
+            { text: '首页', link: '/' }, //icon: 'reco-home' 
+            { text: '时间轴', link: '/TimeLine/' }, //icon: 'reco-date'
+            { text: '关于', link: '/views/about' }, //icon: 'reco-account'
         ],
         sidebar: [ ],
         // 项目开始时间，只填写年份
@@ -46,14 +47,30 @@ module.exports = {
             platform: 'github',
             owner: 'linshanzeng',
             repo: 'linshanzeng.github.io',
-            clientId: 'e3f18a1e6913213f2460',
-            clientSecret: 'a12bd32dc0cb16982a3453a290d9f363915bf8b4',
             autoCreateIssue: true,
-            
+
+            // clientId: 'e3f18a1e6913213f2460',
+            // clientSecret: 'a12bd32dc0cb16982a3453a290d9f363915bf8b4',
+
             // http://localhost:8080
-            // clientId: '9726dc8d42a0ef47d8f1',
-            // clientSecret: '0715931b9002823d4ad3492e3ae9d549ac4f3b1f',
-         },
+            clientId: '9726dc8d42a0ef47d8f1',
+            clientSecret: '0715931b9002823d4ad3492e3ae9d549ac4f3b1f',
+        },
+        // 博客配置
+        blogConfig: {
+            category: {
+                location: 2,     // 在导航栏菜单中所占的位置，默认1
+                text: '分类', // 默认文案 “分类”
+            },
+            tag: {
+                location: 3,     // 在导航栏菜单中所占的位置，默认2
+                text: '标签'      // 默认文案 “标签”
+            },
+            socialLinks: [     // 信息栏展示社交信息
+                { icon: 'reco-github', link: 'https://github.com/linshanzeng' },
+                { icon: 'reco-csdn', link: 'https://blog.csdn.net/zenglinshan' }
+            ]
+        }
     },
     head: [
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
@@ -73,15 +90,5 @@ module.exports = {
             hideText: "(●—●)呜呜，不要走嘛！！",
             recoverTime: 2000
         }],
-        // ["@vssue/vuepress-plugin-vssue", {
-        //     platform: 'github',
-        //     owner: 'linshanzeng',
-        //     repo: 'https://github.com/linshanzeng/linshanzeng.github.io',
-        //     // clientId: 'e3f18a1e6913213f2460',
-        //     // clientSecret: 'a12bd32dc0cb16982a3453a290d9f363915bf8b4',
-        //     // http://localhost:8080
-        //     clientId: '9726dc8d42a0ef47d8f1',
-        //     clientSecret: '0715931b9002823d4ad3492e3ae9d549ac4f3b1f',
-        // }]
     ],
 }

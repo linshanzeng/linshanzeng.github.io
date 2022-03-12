@@ -13,6 +13,10 @@ tags:
 
 <!-- more -->
 
+## 个人博客（前端）
+
+* [**小帅の技术博客**](https://ssscode.com/)
+
 ## 个人收藏夹
 
 * [一位大佬的收藏夹](https://panjiachen.github.io/awesome-bookmarks/)

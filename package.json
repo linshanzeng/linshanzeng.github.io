@@ -17,6 +17,8 @@
     "vuepress": "^1.9.7",
     "vuepress-plugin-dynamic-title": "^1.0.0",
     "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+    "vuepress-plugin-one-click-copy": "^1.0.6",
+    "vuepress-plugin-thirdparty-search": "^1.0.2",
     "vuepress-theme-reco": "^1.6.11"
   }
 }

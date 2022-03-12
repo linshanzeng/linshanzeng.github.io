@@ -49,12 +49,12 @@ module.exports = {
             repo: 'linshanzeng.github.io',
             autoCreateIssue: true,
 
-            // clientId: 'e3f18a1e6913213f2460',
-            // clientSecret: 'a12bd32dc0cb16982a3453a290d9f363915bf8b4',
+            clientId: 'e3f18a1e6913213f2460',
+            clientSecret: 'a12bd32dc0cb16982a3453a290d9f363915bf8b4',
 
             // http://localhost:8080
-            clientId: '9726dc8d42a0ef47d8f1',
-            clientSecret: '0715931b9002823d4ad3492e3ae9d549ac4f3b1f',
+            // clientId: '9726dc8d42a0ef47d8f1',
+            // clientSecret: '0715931b9002823d4ad3492e3ae9d549ac4f3b1f',
         },
         // 博客配置
         blogConfig: {
@@ -73,15 +73,16 @@ module.exports = {
         }
     },
     head: [
+        ['link', { rel: 'icon', href: '/avatar.png' }], //favicons，资源放在public文件夹
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
     ],
     plugins: [
-        ["vuepress-plugin-nuggets-style-copy", {
-            copyText: "复制代码",
-            tip: {
-                content: "复制成功!"
-            }
-        }],
+        // ["vuepress-plugin-nuggets-style-copy", {
+        //     copyText: "复制代码",
+        //     tip: {
+        //         content: "复制成功!"
+        //     }
+        // }],
         // 动态标题
         ["dynamic-title", {
             showIcon: "vuepress/smile.ico",
@@ -90,5 +91,25 @@ module.exports = {
             hideText: "(●—●)呜呜，不要走嘛！！",
             recoverTime: 2000
         }],
+        // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
+        ['thirdparty-search', {
+            thirdparty: [
+                {
+                    title: '在Google中搜索', // 搜索链接的前面部分
+                    frontUrl: 'https://www.google.com/search?q', // 搜索链接的后面部分，可选，默认 ''
+                }, {
+                    title: '在Baidu中搜索',
+                    frontUrl: 'https://www.baidu.com/s?wd=',
+                },
+            ],
+        }],
+        ['one-click-copy', {
+                // 代码块复制按钮
+                copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
+                copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
+                duration: 1000, // prompt message display time.
+                showInMobile: false, // whether to display on the mobile side, default: false.
+            },
+        ],
     ],
 }

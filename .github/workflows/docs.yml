@@ -23,7 +23,7 @@ jobs:
 
       # 生成静态文件
       - name: Build
-        run: npm install && npm run docs:build
+        run: yarn install && yarn run docs:build
 
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages

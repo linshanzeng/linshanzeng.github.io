@@ -1,44 +1,48 @@
 // config.js
 module.exports = {
-    title: 'TypeScript4 文档',
-    description: 'TypeScript4 最新官方文档翻译',
+    title: '个人博客',
+    description: '个人博客',
     theme: 'reco',
     locales: {
         '/': {
             lang: 'zh-CN'
         }
     },
+    markdown: {
+        lineNumbers: true
+    },
     themeConfig: {
         subSidebar: 'auto',
+        type: 'blog',
+        authorAvatar: '/avatar.png',
+        mode: 'light', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
+        modePicker: true, // 默认 true，false 不显示模式调节按钮，true 则显示
+        author: 'linshanzeng',
         nav: [
             { text: '首页', link: '/' },
-            { 
-                text: '冴羽的 JavaScript 博客', 
-                items: [
-                    { text: 'Github', link: 'https://github.com/mqyqingfeng' },
-                    { text: '掘金', link: 'https://juejin.cn/user/712139234359182/posts' }
-                ]
-            }
+            { text: '时间轴', link: '/TimeLine/' },
         ],
-        sidebar: [
-            {
-                title: '欢迎学习',
-                path: '/',
-                collapsable: false, // 不折叠
-                children: [
-                    { title: "学前必读", path: "/" }
-                ]
-            },
-            {
-                title: "基础学习",
-                path: '/handbook/ConditionalTypes',
-                collapsable: false, // 不折叠
-                children: [
-                    { title: "条件类型", path: "/handbook/ConditionalTypes" },
-                    { title: "泛型", path: "/handbook/Generics" }
-                ],
-            }
-        ]
+        sidebar: [ ],
+        // 项目开始时间，只填写年份
+        startYear: '2022',
     },
-
+    head: [
+        ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+    ],
+    plugins: [
+        ["vuepress-plugin-nuggets-style-copy", {
+            copyText: "复制代码",
+            tip: {
+                content: "复制成功!"
+            }
+        }],
+        // 动态标题
+        ["dynamic-title", {
+            showIcon: "vuepress/smile.ico",
+            showText: "(/≧▽≦/)欢迎帅哥美女！",
+            hideIcon: "vuepress/cry.ico",
+            hideText: "(●—●)呜呜，不要走嘛！！",
+            recoverTime: 2000
+        }],
+    ],
 }

@@ -4,6 +4,10 @@ date: 2022-03-12 04:00:00
 permalink: /about.html
 sidebar: false
 article: false
+categories:
+ - 其它
+tags:
+ - 其它
 ---
 
 主要用来记录一些学习笔记，所有涉及到的技术或资源仅用于学习交流。

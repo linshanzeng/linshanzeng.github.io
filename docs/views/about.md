@@ -10,9 +10,13 @@ article: false
 
 <!-- more -->
 
+* [**博客代码**](https://github.com/linshanzeng/linshanzeng.github.io)
+
 ## 关于博客
 
-* [**博客代码**](https://github.com/linshanzeng/linshanzeng.github.io)
+* 文章：前端、后端、其它
+
+* 标签：学习笔记、实战、我的收藏、其它
 
 ## 项目
 
@@ -31,7 +35,11 @@ article: false
 ## 正在解决的问题
 
 1. 首页分页功能
-2. 标签页图标缺失
-3. ~~隐藏导航栏分类、标签~~
+2. ~~标签页图标缺失~~
+3. ~~隐藏导航栏分类、标签小图标~~
 4. ~~隐藏导航栏源码链接~~
 5. 把关于从文章列表删去？
+
+## 正在学习的内容
+
+1. [响应式网页设计](https://chinese.freecodecamp.org/learn/responsive-web-design/)

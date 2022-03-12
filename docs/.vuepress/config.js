@@ -84,13 +84,13 @@ module.exports = {
         //     }
         // }],
         // 动态标题
-        ["dynamic-title", {
-            showIcon: "vuepress/smile.ico",
-            showText: "(/≧▽≦/)欢迎帅哥美女！",
-            hideIcon: "vuepress/cry.ico",
-            hideText: "(●—●)呜呜，不要走嘛！！",
-            recoverTime: 2000
-        }],
+        // ["dynamic-title", {
+        //     showIcon: "vuepress/smile.ico",
+        //     showText: "(/≧▽≦/)欢迎帅哥美女！",
+        //     hideIcon: "vuepress/cry.ico",
+        //     hideText: "(●—●)呜呜，不要走嘛！！",
+        //     recoverTime: 2000
+        // }],
         // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
         ['thirdparty-search', {
             thirdparty: [

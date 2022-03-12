@@ -9,15 +9,45 @@ tags:
 # article: false
 ---
 
-收集各种优秀的网站（含官方、企业、个人），文章和专栏...
+收集各种优秀的网站和文章，扩展自己的知识面，知道兴趣点
 
 <!-- more -->
 
-## 个人博客（前端）
+> 反对制造焦虑、广告、鸡汤文，保持自己的好奇心
+
+## 1.探索
+
+* [**GitHub Trend**](https://github.com/trending)发现热门项目
+* [**GitHub Topic**](https://github.com/topics)发现流行主题
+* [**segmentfault专栏**](https://segmentfault.com/blogs)
+
+* [**Eric_hong**](https://sspai.com/u/ja69pqna/)
+
+## 2.学习
+
+* [**freecodecamp**](https://chinese.freecodecamp.org/learn/)免费学习编程
+* [**前端知识每日3+1**](http://www.h-camel.com/index.html)
+* [**前端随笔 FE-Essay**](https://i-want-offer.github.io/FE-Essay/)好文章，前端的知识点和遇到的面试真题。
+* [**LeetcodeTop**](https://codetop.cc/)Leetcode题目推荐
+* [**代码随想录**](https://programmercarl.com/)算法解题思路
+
+## 3.书籍
+
+* [**Pro Git，第二版，简体中文**](https://git-scm.com/book/zh/v2)
+
+## 4.文章
+
+* [**掌握 3 个搜索技巧，在 GitHub 上快速找到实用软件资源**](https://sspai.com/post/46061)
+
+## 5.Git项目
+
+* [**awesome-vuepress**](https://github.com/vuepress/awesome-vuepress)vuepress资源
+
+## 6.其它
 
 * [**小帅の技术博客**](https://ssscode.com/)
 
-## 个人收藏夹
+<!-- ## 个人收藏夹
 
 * [一位大佬的收藏夹](https://panjiachen.github.io/awesome-bookmarks/)
 * [ES2049 Studio/团队博客](https://www.yuque.com/es2049/blog) 优秀JS文章翻译
@@ -242,4 +272,4 @@ tags:
 
 ## 算法
 
-* [leetcode](https://github.com/azl397985856/leetcode) 用 js 刷 leetcode
+* [leetcode](https://github.com/azl397985856/leetcode) 用 js 刷 leetcode -->

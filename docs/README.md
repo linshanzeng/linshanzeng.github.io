@@ -1,8 +1,8 @@
 ---
 home: true
-heroText: null
+heroText: 简洁至上
 bgImageStyle: {
-  height: '100px'
+  height: 200px
   # height: 0px
 }
 ---

@@ -45,12 +45,15 @@ module.exports = {
         vssueConfig: {
             platform: 'github',
             owner: 'linshanzeng',
-            repo: 'https://github.com/linshanzeng/linshanzeng.github.io',
+            repo: 'linshanzeng.github.io',
             clientId: 'e3f18a1e6913213f2460',
             clientSecret: 'a12bd32dc0cb16982a3453a290d9f363915bf8b4',
+            autoCreateIssue: true,
+            
+            // http://localhost:8080
             // clientId: '9726dc8d42a0ef47d8f1',
             // clientSecret: '0715931b9002823d4ad3492e3ae9d549ac4f3b1f',
-        },
+         },
     },
     head: [
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
@@ -70,5 +73,15 @@ module.exports = {
             hideText: "(●—●)呜呜，不要走嘛！！",
             recoverTime: 2000
         }],
+        // ["@vssue/vuepress-plugin-vssue", {
+        //     platform: 'github',
+        //     owner: 'linshanzeng',
+        //     repo: 'https://github.com/linshanzeng/linshanzeng.github.io',
+        //     // clientId: 'e3f18a1e6913213f2460',
+        //     // clientSecret: 'a12bd32dc0cb16982a3453a290d9f363915bf8b4',
+        //     // http://localhost:8080
+        //     clientId: '9726dc8d42a0ef47d8f1',
+        //     clientSecret: '0715931b9002823d4ad3492e3ae9d549ac4f3b1f',
+        // }]
     ],
 }

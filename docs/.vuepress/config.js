@@ -46,7 +46,7 @@ module.exports = {
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
     ],
     pagination: {
-        perPage: 2,
+        perPage: 4,
     },
     plugins: [
         ["vuepress-plugin-nuggets-style-copy", {
@@ -64,7 +64,7 @@ module.exports = {
             recoverTime: 2000
         }],
         ['@vuepress-reco/vuepress-plugin-pagation', {
-            'perPage': 2,
+            'perPage': 4,
         }],
     ],
 }

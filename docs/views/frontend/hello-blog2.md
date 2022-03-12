@@ -448,3 +448,4 @@ module.exports = {
 
 - [**vuepress-theme-reco分类和标签**](https://vuepress-theme-reco.recoluan.com/views/1.x/blog.html)
 - [**vuepress-theme-reco个人向优化**](https://vuepress-theme-reco.recoluan.com/views/other/reco-optimization.html)
+- [**VuePress 博客优化之增加 Vssue 评论功能**](https://github.com/mqyqingfeng/Blog/issues/270)

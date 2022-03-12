@@ -14,10 +14,11 @@ module.exports = {
     themeConfig: {
         subSidebar: 'auto',
         type: 'blog',
-        authorAvatar: '/avatar.png',
+        authorAvatar: '/avatar.png', // 首页右侧信息栏图像
         mode: 'light', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
         modePicker: true, // 默认 true，false 不显示模式调节按钮，true 则显示
         author: 'linshanzeng',
+        // logo: '/avatar.png', // 导航栏左侧的图片
         nav: [
             { text: '首页', link: '/' },
             { text: '时间轴', link: '/TimeLine/' },
@@ -41,13 +42,19 @@ module.exports = {
         editLinks: true,
         // 默认为 "Edit this page"
         editLinkText: '在GitHub上编辑此页！',
+        vssueConfig: {
+            platform: 'github',
+            owner: 'linshanzeng',
+            repo: 'https://github.com/linshanzeng/linshanzeng.github.io',
+            clientId: 'e3f18a1e6913213f2460',
+            clientSecret: 'a12bd32dc0cb16982a3453a290d9f363915bf8b4',
+            // clientId: '9726dc8d42a0ef47d8f1',
+            // clientSecret: '0715931b9002823d4ad3492e3ae9d549ac4f3b1f',
+        },
     },
     head: [
-        ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+        ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
     ],
-    pagination: {
-        perPage: 4,
-    },
     plugins: [
         ["vuepress-plugin-nuggets-style-copy", {
             copyText: "复制代码",
@@ -62,9 +69,6 @@ module.exports = {
             hideIcon: "vuepress/cry.ico",
             hideText: "(●—●)呜呜，不要走嘛！！",
             recoverTime: 2000
-        }],
-        ['@vuepress-reco/vuepress-plugin-pagation', {
-            'perPage': 4,
         }],
     ],
 }

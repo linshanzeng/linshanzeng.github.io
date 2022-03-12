@@ -96,7 +96,7 @@ module.exports = {
             thirdparty: [
                 {
                     title: '在Google中搜索', // 搜索链接的前面部分
-                    frontUrl: 'https://www.google.com/search?q', // 搜索链接的后面部分，可选，默认 ''
+                    frontUrl: 'https://www.google.com/search?q=', // 搜索链接的后面部分，可选，默认 ''
                 }, {
                     title: '在Baidu中搜索',
                     frontUrl: 'https://www.baidu.com/s?wd=',
@@ -111,5 +111,8 @@ module.exports = {
                 showInMobile: false, // whether to display on the mobile side, default: false.
             },
         ],
+        ["@mr-hope/reading-time", {
+
+        }]
     ],
 }

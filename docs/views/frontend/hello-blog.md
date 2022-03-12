@@ -5,6 +5,7 @@ categories:
  - 前端
 tags:
  - 实战
+readingTime: { minutes: 3, words: 1500 }
 ---
 
 搭建VuePress博客项目，通过GitHub Actions实现自动化部署，使用GitHub Pages访问网页

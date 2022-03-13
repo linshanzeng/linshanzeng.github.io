@@ -3,6 +3,7 @@ module.exports = {
     title: '技术博客',
     description: '技术博客',
     theme: 'reco',
+    // theme: '@vuepress/theme-default',
     locales: {
         '/': {
             lang: 'zh-CN'
@@ -92,27 +93,35 @@ module.exports = {
         //     recoverTime: 2000
         // }],
         // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
-        ['thirdparty-search', {
-            thirdparty: [
-                {
-                    title: '在Google中搜索', // 搜索链接的前面部分
-                    frontUrl: 'https://www.google.com/search?q=', // 搜索链接的后面部分，可选，默认 ''
-                }, {
-                    title: '在Baidu中搜索',
-                    frontUrl: 'https://www.baidu.com/s?wd=',
-                },
-            ],
-        }],
+        // ['thirdparty-search', {
+        //     thirdparty: [
+        //         {
+        //             title: '在Google中搜索', // 搜索链接的前面部分
+        //             frontUrl: 'https://www.google.com/search?q=', // 搜索链接的后面部分，可选，默认 ''
+        //         }, {
+        //             title: '在Baidu中搜索',
+        //             frontUrl: 'https://www.baidu.com/s?wd=',
+        //         },
+        //     ],
+        // }],
         ['one-click-copy', {
-                // 代码块复制按钮
-                copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
-                copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
-                duration: 1000, // prompt message display time.
-                showInMobile: false, // whether to display on the mobile side, default: false.
-            },
-        ],
-        ["@mr-hope/reading-time", {
-
-        }]
+            // 代码块复制按钮
+            copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
+            copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
+            duration: 1000, // prompt message display time.
+            showInMobile: false, // whether to display on the mobile side, default: false.
+        }],
+        [ 'fulltext-search', {
+            // 全文搜索
+        }],
+        ["vuepress-plugin-boxx", {
+            // 名言
+        }],
+        ['vuepress-plugin-baidu-autopush', {
+            // 百度站点推送
+        }],
+        ['@vuepress-reco/vuepress-plugin-pagation', {
+            perPage: 4
+        }],
     ],
 }

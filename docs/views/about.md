@@ -14,6 +14,8 @@ tags:
 
 <!-- more -->
 
+<Boxx type="warning" changeTime="1000"/>
+
 - [**博客代码**](https://github.com/linshanzeng/linshanzeng.github.io)
 
 ## 内容
@@ -38,9 +40,6 @@ tags:
 
 ## 正在解决的问题
 
-- 首页分页功能
-- 把关于从文章列表删去？
-
 ## 已经解决的问题
 
 ::: details 点击展开列表
@@ -48,6 +47,8 @@ tags:
 - 标签页图标缺失
 - 隐藏导航栏分类、标签小图标
 - 隐藏导航栏源码链接
+- 首页分页功能
+
 :::
 
 ## 正在学习的内容

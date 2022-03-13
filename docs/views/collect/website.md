@@ -44,6 +44,8 @@ tags:
 ## 5.Git项目
 
 - [**awesome-vuepress**](https://github.com/vuepress/awesome-vuepress)vuepress资源
+- [**vue-netease-music**](https://github.com/sl1673495/vue-netease-music)网页版网易云
+- [**Vue-mmPlayer**](https://github.com/maomao1996/Vue-mmPlayer)网页版QQ音乐
 
 ## 6.资源
 

@@ -14,19 +14,19 @@ tags:
 
 <!-- more -->
 
-<!-- <Boxx type="warning" changeTime="1000"/> -->
+<Boxx type="warning" changeTime="1000"/>
 
 - [**博客代码**](https://github.com/linshanzeng/linshanzeng.github.io)
 
-## GitHub
+<!-- ## GitHub
 
 [![linshanzeng's github stats](https://github-readme-stats.vercel.app/api?username=linshanzeng)](https://github.com/anuraghazra/github-readme-stats)
 
-[![linshanzeng's Github chart](http://ghchart.rshah.org/linshanzeng)](http://ghchart.rshah.org/linshanzeng)
+[![linshanzeng's Github chart](http://ghchart.rshah.org/linshanzeng)](http://ghchart.rshah.org/linshanzeng) -->
 
 ## 内容
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=linshanzeng&layout=compact)](https://github.com/linshanzeng/github-readme-stats)
+<!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=linshanzeng&layout=compact)](https://github.com/linshanzeng/github-readme-stats) -->
 
 - 文章：前端、后端、其它
 

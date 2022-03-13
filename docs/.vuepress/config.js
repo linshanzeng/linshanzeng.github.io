@@ -49,12 +49,12 @@ module.exports = {
             repo: 'linshanzeng.github.io',
             autoCreateIssue: true,
 
-            // clientId: 'e3f18a1e6913213f2460',
-            // clientSecret: 'a12bd32dc0cb16982a3453a290d9f363915bf8b4',
+            clientId: 'e3f18a1e6913213f2460',
+            clientSecret: 'a12bd32dc0cb16982a3453a290d9f363915bf8b4',
 
             // http://localhost:8080
-            clientId: '9726dc8d42a0ef47d8f1',
-            clientSecret: '0715931b9002823d4ad3492e3ae9d549ac4f3b1f',
+            // clientId: '9726dc8d42a0ef47d8f1',
+            // clientSecret: '0715931b9002823d4ad3492e3ae9d549ac4f3b1f',
         },
         // 博客配置
         blogConfig: {

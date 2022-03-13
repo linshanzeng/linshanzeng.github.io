@@ -20,6 +20,7 @@ module.exports = {
         modePicker: true, // 默认 true，false 不显示模式调节按钮，true 则显示
         author: 'linshanzeng',
         // logo: '/avatar.png', // 导航栏左侧的图片
+        searchMaxSuggestions : 10,
         nav: [
             { text: '首页', link: '/' }, //icon: 'reco-home' 
             { text: '时间轴', link: '/TimeLine/' }, //icon: 'reco-date'

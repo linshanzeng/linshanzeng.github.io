@@ -16,7 +16,7 @@ tags:
 
 - [**博客代码**](https://github.com/linshanzeng/linshanzeng.github.io)
 
-## 听会歌
+<!-- ## 听会歌 -->
 
 <!-- <Meting server="netease"
         type="playlist"
@@ -28,14 +28,14 @@ tags:
         mid="68586070"
         :lrc-type="3"/> -->
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1417082727&auto=0&height=66"></iframe>
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1417082727&auto=0&height=66"></iframe> -->
 
-::: tip 诗词
+<!-- ::: tip 诗词
 <span id="jinrishici-sentence">正在加载今日诗词....</span>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-:::
+::: -->
 
-<!-- <Boxx type="warning" changeTime="1000"/> -->
+<Boxx type="warning" changeTime="1000"/>
 
 <!-- ## GitHub
 

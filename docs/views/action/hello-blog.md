@@ -191,11 +191,11 @@ module.exports = {
 
 ```js
 module.exports = {
-//...
-themeConfig: {
-    subSidebar: 'auto'
-}
-//...
+    //...
+    themeConfig: {
+        subSidebar: 'auto'
+    }
+    //...
 }
 ```
 

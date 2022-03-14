@@ -9,7 +9,7 @@ tags:
 # article: false
 ---
 
-收集各种优秀的网站和文章，扩展自己的知识面，知道兴趣点
+收集各种优秀的网站和文章，拥抱开源，扩展自己的知识面，了解自己的兴趣点
 
 <!-- more -->
 
@@ -57,9 +57,9 @@ tags:
 
 - [**sioxas**](http://sioxas.github.io/#/)  手机端播放逻辑  Sioxas/vue-music
 
-<https://netease-music.fe-mm.com/>            拉取歌曲功能    maomao1996/Vue-mmPlayer
+<!-- <https://netease-music.fe-mm.com/>            拉取歌曲功能    maomao1996/Vue-mmPlayer
 <http://qg-music.blairq.top/>                 整体布局        jiqiangzhu
-<https://ssh-music.vercel.app/>               PC端布局
+<https://ssh-music.vercel.app/>               PC端布局 -->
 
 <!-- ## 个人收藏夹
 

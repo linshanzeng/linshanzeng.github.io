@@ -70,7 +70,8 @@ module.exports = {
             },
             socialLinks: [     // 信息栏展示社交信息
                 { icon: 'reco-github', link: 'https://github.com/linshanzeng' },
-                { icon: 'reco-csdn', link: 'https://blog.csdn.net/zenglinshan' }
+                { icon: 'reco-csdn', link: 'https://blog.csdn.net/zenglinshan' },
+                { icon: 'reco-sf', link: 'https://segmentfault.com/u/linshanzeng/' },
             ]
         }
     },

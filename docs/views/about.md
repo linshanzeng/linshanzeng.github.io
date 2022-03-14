@@ -3,7 +3,7 @@ title: 关于本站
 date: 2022-03-12 04:00:00
 permalink: /about.html
 sidebar: true
-article: false
+# article: false
 categories:
  - 其它
 tags:
@@ -14,9 +14,28 @@ tags:
 
 <!-- more -->
 
-<Boxx type="warning" changeTime="1000"/>
-
 - [**博客代码**](https://github.com/linshanzeng/linshanzeng.github.io)
+
+## 听会歌
+
+<!-- <Meting server="netease"
+        type="playlist"
+        mid="6838211960"
+        :lrc-type="3"/>
+
+<Meting server="netease"
+        type="playlist"
+        mid="68586070"
+        :lrc-type="3"/> -->
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1417082727&auto=0&height=66"></iframe>
+
+::: tip 诗词
+<span id="jinrishici-sentence">正在加载今日诗词....</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+:::
+
+<!-- <Boxx type="warning" changeTime="1000"/> -->
 
 <!-- ## GitHub
 

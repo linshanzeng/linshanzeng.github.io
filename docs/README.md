@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: 简洁至上
+heroText: 大道至简
 bgImageStyle: {
   height: 170px
   # height: 0px

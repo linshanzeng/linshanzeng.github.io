@@ -124,5 +124,16 @@ module.exports = {
         ['@vuepress-reco/vuepress-plugin-pagation', {
             perPage: 4
         }],
+        // ['meting', {
+        //     // metingApi: 'https://api.i-meto.com/meting/api',
+        //     meting: {
+        //         server: 'netease',
+        //         type: 'playlist',
+        //         mid: '6838211960',
+        //     }, // 不配置该项的话不会出现全局播放器
+        //     aplayer: {
+        //         lrcType: 3,
+        //     },
+        // },]
     ],
 }

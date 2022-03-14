@@ -55,6 +55,12 @@ tags:
 
 - [**小帅の技术博客**](https://ssscode.com/)
 
+- [**sioxas**](http://sioxas.github.io/#/)  手机端播放逻辑  Sioxas/vue-music
+
+<https://netease-music.fe-mm.com/>            拉取歌曲功能    maomao1996/Vue-mmPlayer
+<http://qg-music.blairq.top/>                 整体布局        jiqiangzhu
+<https://ssh-music.vercel.app/>               PC端布局
+
 <!-- ## 个人收藏夹
 
 - [一位大佬的收藏夹](https://panjiachen.github.io/awesome-bookmarks/)

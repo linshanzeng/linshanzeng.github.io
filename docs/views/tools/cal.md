@@ -2,7 +2,7 @@
 title: 实现复利计算器
 date: 2022-03-17 00:00:00
 categories:
- - 其它
+ - 前端
 tags:
  - 实战
 ---
@@ -49,7 +49,7 @@ tags:
             <input type="radio" id="radio01" value="复利" name="radioGroup01" required>复利
         </label>
         <label for="radio02">
-            <input type="radio" id="radio02" value="定投本利" name="radioGroup01">定投本利
+            <input type="radio" id="radio02" value="定投本利" name="radioGroup01" checked>定投本利
         </label></div>
         <hr>
         <div class="div01">投资本金：<input type="text" placeholder="请输入投资本金" required></div>
@@ -61,7 +61,7 @@ tags:
             <input type="radio" id="radio11" value="每年" name="radioGroup11" required>每年
         </label>
         <label for="radio12">
-            <input type="radio" id="radio12" value="每月" name="radioGroup11" required>每月
+            <input type="radio" id="radio12" value="每月" name="radioGroup11" checked>每月
         </label></div>
         <hr>
         <div class="div01">年利率(%)：<input type="text" placeholder="请输入投资年化收益率" required></div>

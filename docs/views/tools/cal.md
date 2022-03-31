@@ -1,4 +1,4 @@
----
+<!-- ---
 title: 实现复利计算器
 date: 2022-03-17 00:00:00
 categories:
@@ -8,8 +8,6 @@ tags:
 ---
 
 参考安卓应用《复利计算器》，实现类似功能，正在开发中
-
-<!-- more -->
 
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
@@ -69,6 +67,4 @@ tags:
         <div class="div01">到期本利和：<input type="text" placeholder="计算得出" disabled></div>
         <div class="div01"><button type="submit">计算</button></div>
     </form>
-    <!-- <img src="#" alt="参考图"> -->
-    <!-- ![参考图](/docs/.vuepress/public/fund.HEIC) -->
-</div>
+</div> -->

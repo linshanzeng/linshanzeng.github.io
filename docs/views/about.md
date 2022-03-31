@@ -65,7 +65,7 @@ tags:
 
 - 优化博客过程，可参考这篇博客：[优化VuePress博客](https://linshanzeng.github.io/views/frontend/hello-blog)
 
-## 正在解决的问题
+<!-- ## 正在解决的问题
 
 ## 已经解决的问题
 
@@ -82,6 +82,6 @@ tags:
 
 1. [响应式网页设计](https://chinese.freecodecamp.org/learn/responsive-web-design/)
 
-## 短期目标
+## 短期目标 -->
 
 <!-- 1. 只做一个生活博客，包含国内疫情实时地图，音乐，视频 -->

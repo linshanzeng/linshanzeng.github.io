@@ -50,11 +50,12 @@ tags:
 ## 6.资源
 
 - [**Google 字体库**](https://fonts.google.com/)
+- [**YTS**](https://yts.mx/) 在线观看、BT下载（电影，字幕）
+- [**豆瓣电影**](https://movie.douban.com/) 配合YTS使用，重命名下载的文件，查看电影评价
 
 ## 6.其它
 
 - [**小帅の技术博客**](https://ssscode.com/)
-
 - [**sioxas**](http://sioxas.github.io/#/)  手机端播放逻辑  Sioxas/vue-music
 
 <!-- <https://netease-music.fe-mm.com/>            拉取歌曲功能    maomao1996/Vue-mmPlayer

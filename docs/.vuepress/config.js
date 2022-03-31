@@ -1,7 +1,7 @@
 // config.js
 module.exports = {
-    title: '技术博客',
-    description: '技术博客',
+    title: '个人杂记',
+    description: '个人杂记',
     theme: 'reco',
     // theme: '@vuepress/theme-default',
     locales: {

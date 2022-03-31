@@ -14,7 +14,7 @@ tags:
 
 <!-- more -->
 
-- [**博客代码**](https://github.com/linshanzeng/linshanzeng.github.io)
+- [**源代码**](https://github.com/linshanzeng/linshanzeng.github.io)
 
 <!-- ## 听会歌 -->
 
@@ -53,7 +53,7 @@ tags:
 
 ## 项目
 
-- [**技术博客**](/)
+- [**个人杂记**](/)
 
 <!-- - [**生活博客**](https://linshanzeng.github.io/life) -->
 

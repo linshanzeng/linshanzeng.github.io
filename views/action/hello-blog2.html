@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>优化VuePress博客 | 个人杂记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/avatar.png">
+    <meta name="description" content="个人杂记">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.04a039b2.css" as="style"><link rel="preload" href="/assets/js/app.0c087b24.js" as="script"><link rel="preload" href="/assets/js/3.8c6a21b0.js" as="script"><link rel="preload" href="/assets/js/1.3f8f6d7b.js" as="script"><link rel="preload" href="/assets/js/13.858bcd6d.js" as="script"><link rel="prefetch" href="/assets/js/10.7448bdc2.js"><link rel="prefetch" href="/assets/js/11.93f4989d.js"><link rel="prefetch" href="/assets/js/12.e657053d.js"><link rel="prefetch" href="/assets/js/14.11baf320.js"><link rel="prefetch" href="/assets/js/15.73ea8e0d.js"><link rel="prefetch" href="/assets/js/16.115b90ad.js"><link rel="prefetch" href="/assets/js/17.c4a73549.js"><link rel="prefetch" href="/assets/js/4.c615d7b9.js"><link rel="prefetch" href="/assets/js/5.f76bc4f0.js"><link rel="prefetch" href="/assets/js/6.4b29d158.js"><link rel="prefetch" href="/assets/js/7.b441ca26.js"><link rel="prefetch" href="/assets/js/8.0879ca97.js"><link rel="prefetch" href="/assets/js/9.328390b9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.04a039b2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>个人杂记</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>个人杂记</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>linshanzeng</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人杂记</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/其它/" class="nav-link"><i class="undefined"></i>
+  其它
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/TimeLine/" class="nav-link"><i class="undefined"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/views/about.html" class="nav-link"><i class="undefined"></i>
+  关于
+</a></div> <a href="https://github.com/linshanzeng/linshanzeng.github.io" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-github"></i>
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    linshanzeng
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>6</h3> <h6 data-v-39576ba9>文章</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>3</h3> <h6 data-v-39576ba9>标签</h6></div></div> <ul class="social-links" data-v-39576ba9><li class="social-item" data-v-39576ba9><i class="iconfont reco-github" style="color:#f47e60;" data-v-39576ba9></i></li><li class="social-item" data-v-39576ba9><i class="iconfont reco-csdn" style="color:#f47e60;" data-v-39576ba9></i></li><li class="social-item" data-v-39576ba9><i class="iconfont reco-sf" style="color:#3498db;" data-v-39576ba9></i></li></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/其它/" class="nav-link"><i class="undefined"></i>
+  其它
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/TimeLine/" class="nav-link"><i class="undefined"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/views/about.html" class="nav-link"><i class="undefined"></i>
+  关于
+</a></div> <a href="https://github.com/linshanzeng/linshanzeng.github.io" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-github"></i>
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>优化VuePress博客</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>linshanzeng</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title">优化VuePress博客</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>linshanzeng</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>2022/3/12</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>实战</span></i></div></div> <div class="theme-reco-content content__default"><p>使用vuepress-theme-reco博客主题的高级功能，Vssue实现评论</p> <h2 id="_1-添加时间轴"><a href="#_1-添加时间轴" class="header-anchor">#</a> 1.添加时间轴</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">theme</span><span class="token operator">:</span> <span class="token string">'reco'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">nav</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">'TimeLine'</span><span class="token punctuation">,</span> <span class="token literal-property property">link</span><span class="token operator">:</span> <span class="token string">'时间轴'</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_2-移动端优化"><a href="#_2-移动端优化" class="header-anchor">#</a> 2.移动端优化</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">head</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'meta'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'viewport'</span><span class="token punctuation">,</span> <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">'width=device-width,initial-scale=1,user-scalable=no'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="_3-首页配置"><a href="#_3-首页配置" class="header-anchor">#</a> 3.首页配置</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">theme</span><span class="token operator">:</span> <span class="token string">'reco'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'blog'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>首页README.md</p> <div class="language-md line-numbers-mode"><pre class="language-md"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml"><span class="token key atrule">home</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">heroText</span><span class="token punctuation">:</span> <span class="token null important">null</span>
+<span class="token key atrule">bgImageStyle</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  <span class="token key atrule">height</span><span class="token punctuation">:</span> <span class="token string">'0px'</span>
+<span class="token punctuation">}</span></span>
+<span class="token punctuation">---</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 设置首页右侧信息栏头像</span>
+<span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">theme</span><span class="token operator">:</span> <span class="token string">'reco'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">authorAvatar</span><span class="token operator">:</span> <span class="token string">'/avatar.png'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="_4-暗色模式适配"><a href="#_4-暗色模式适配" class="header-anchor">#</a> 4.暗色模式适配</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">theme</span><span class="token operator">:</span> <span class="token string">'reco'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">mode</span><span class="token operator">:</span> <span class="token string">'dark'</span><span class="token punctuation">,</span> <span class="token comment">// 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式</span>
+    <span class="token literal-property property">modePicker</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token comment">// 默认 true，false 不显示模式调节按钮，true 则显示</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="_5-修改主题样式"><a href="#_5-修改主题样式" class="header-anchor">#</a> 5.修改主题样式</h2> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">touch</span> docs/.vuepress/styles/index.styl
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><details class="custom-block details"><summary>index.styl</summary> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">// 侧边栏样式
+// 左侧侧边栏标题
+.sidebar &gt; .sidebar-links &gt; li &gt; a.sidebar-link</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 1.5em <span class="token important">!important</span><span class="token punctuation">;</span>
+  <span class="token property">margin-left</span><span class="token punctuation">:</span> -1em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">// 右侧文章标题导航栏
+a.sidebar-link</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">// 左侧边栏标题字体大小样式
+.sidebar-heading span</span><span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2em<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+<span class="token selector">.sidebar-heading.open span</span><span class="token punctuation">{</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">// 左侧边栏展开文章的字体大小
+a.sidebar-link.active</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #070808 <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 14px <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> #c3d4b742 <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.sidebar-sub-headers a.sidebar-link</span> <span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0 1rem 0 1rem <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">// 分组的透明度修改，未生效
+.sidebar-group.is-sub-group &gt; .sidebar-heading:not(.clickable)</span><span class="token punctuation">{</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 0.5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">// 去除左上角标题，作者，标签等
+// .page .page-title</span> <span class="token punctuation">{</span>
+//     <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+// <span class="token punctuation">}</span>
+
+<span class="token selector">blockquote</span> <span class="token punctuation">{</span>
+<span class="token property">background-color</span><span class="token punctuation">:</span> transparent <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 20px <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0 <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 1rem <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #999 <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">border-left</span><span class="token punctuation">:</span> .25rem solid #dfe2e5 <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 0 <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">padding-left</span><span class="token punctuation">:</span> 1rem <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">// tip,warning,danger容器样式
+.custom-block.tip</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #d4d4d452 <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.custom-block.warning</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #ffa16d47 <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.custom-block.danger</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #f9b4b457 <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">// details容器样式
+ summary</span> <span class="token punctuation">{</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> 550<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token property">margin-top</span><span class="token punctuation">:</span> 0.2rem<span class="token punctuation">;</span>
+    <span class="token property">padding-top</span><span class="token punctuation">:</span> 11px<span class="token punctuation">;</span>
+    <span class="token property">padding-bottom</span><span class="token punctuation">:</span> 11px<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #75826b42<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">// 时间线样式
+.timeline-wrapper .year</span> <span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 80px 0px 20px <span class="token important">!important</span><span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 27px <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.timeline-wrapper .year-wrapper li</span> <span class="token punctuation">{</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 10px 20px 10px <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">border-bottom</span><span class="token punctuation">:</span> 2px solid #999da06b <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> #c1c1e626<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 5rem<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 5px 0px<span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> all .5s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.timeline-wrapper .year-wrapper li:hover</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span>  <span class="token function">translate</span><span class="token punctuation">(</span>50px<span class="token punctuation">,</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> all .5s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.timeline-wrapper .year-wrapper li .date</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 43px <span class="token important">!important</span><span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 13px <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.timeline-wrapper .year-wrapper li .date:before</span> <span class="token punctuation">{</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 22px <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 1px solid <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.timeline-wrapper:after</span> <span class="token punctuation">{</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> skyblue <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.timeline-wrapper .desc:before, .timeline-wrapper .year:before</span> <span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> cadetblue <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">//主页，评论偏左
+.page, .password-wrapper-in</span> <span class="token punctuation">{</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 8rem <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.comments-wrapper</span> <span class="token punctuation">{</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 2rem 2rem 2rem 10rem <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#valine .vwrap .vedit #veditor</span><span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'/znote/img/other/comment.png'</span><span class="token punctuation">)</span></span>  
+  <span class="token property">background-position</span><span class="token punctuation">:</span> 90% 60%
+  <span class="token property">background-size</span><span class="token punctuation">:</span> 16rem 10rem
+  <span class="token property">background-repeat</span><span class="token punctuation">:</span> no-repeat
+<span class="token punctuation">}</span>
+
+$mobileSidebarWidth = $sidebarWidth * 0.82
+
+// narrow desktop / iPad
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> $MQNarrow<span class="token punctuation">)</span>
+  .sidebar
+    font-size 15px
+    width $mobileSidebarWidth <span class="token important">!important</span><span class="token punctuation">;</span></span>
+  .page<span class="token punctuation">,</span> .password-wrapper-in
+    margin-left $mobileSidebarWidth <span class="token important">!important</span><span class="token punctuation">;</span>
+  .comments-wrapper 
+    <span class="token property">padding</span><span class="token punctuation">:</span> 2rem 2rem 2rem $mobileSidebarWidth*1.1 <span class="token important">!important</span><span class="token punctuation">;</span>
+
+// wide mobile
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> $MQMobile<span class="token punctuation">)</span>
+  .sidebar
+    top 0
+    padding-top $navbarHeight <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    transform <span class="token function">translateX</span><span class="token punctuation">(</span>-100%<span class="token punctuation">)</span>
+    transition transform .2s ease
+  .page<span class="token punctuation">,</span> .password-wrapper-in
+    margin-left 0  <span class="token important">!important</span><span class="token punctuation">;</span>
+  .comments-wrapper 
+    <span class="token property">padding</span><span class="token punctuation">:</span> 2rem 2rem 2rem 2rem <span class="token important">!important</span><span class="token punctuation">;</span>
+  .theme-container
+    &amp;.sidebar-open
+      .sidebar
+        transform <span class="token function">translateX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span> <span class="token important">!important</span><span class="token punctuation">;</span>
+    &amp;.no-navbar
+      .sidebar
+        <span class="token property">padding-top</span><span class="token punctuation">:</span> 0 <span class="token important">!important</span><span class="token punctuation">;</span>
+  .password-shadow
+    padding-left 0 <span class="token important">!important</span><span class="token punctuation">;</span>
+
+// narrow mobile
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> $MQMobileNarrow<span class="token punctuation">)</span>
+  h1
+    font-size 1.9rem
+  .content__default
+    div[class*=<span class="token string">&quot;language-&quot;</span>]
+      margin 0.85rem -1.5rem  <span class="token important">!important</span><span class="token punctuation">;</span></span>
+      border-radius 0
+//about me
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>$MQMobile + 1px<span class="token punctuation">)</span><span class="token punctuation">)</span>
+  .theme-container.no-sidebar
+    .sidebar
+      display none
+    .page<span class="token punctuation">,</span> .password-wrapper-in
+      margin-left 0  <span class="token important">!important</span><span class="token punctuation">;</span></span>
+    .comments-wrapper 
+      <span class="token property">padding</span><span class="token punctuation">:</span> 2rem 2rem 2rem 2rem <span class="token important">!important</span><span class="token punctuation">;</span>
+
+<span class="token selector">//标签列表样式
+.abstract-item</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #acdcfd3d <span class="token important">!important</span><span class="token punctuation">;</span>  
+  <span class="token property">transition</span><span class="token punctuation">:</span> all .5s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.abstract-item:hover</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span>  <span class="token function">scale</span><span class="token punctuation">(</span>1.02<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> all .5s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+//<span class="token property">滚动条样式</span>
+<span class="token punctuation">:</span><span class="token punctuation">:</span>-webkit-scrollbar
+  <span class="token property">width</span><span class="token punctuation">:</span> 6px <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token comment">/*滚动条的设置*/</span>
+<span class="token selector">::-webkit-scrollbar-thumb</span> <span class="token punctuation">{</span>
+<span class="token property">background-color</span><span class="token punctuation">:</span>#94989c8c <span class="token important">!important</span><span class="token punctuation">;</span> 
+<span class="token property">background-clip</span><span class="token punctuation">:</span>padding-box <span class="token important">!important</span><span class="token punctuation">;</span> 
+<span class="token property">-webkit-border-radius</span><span class="token punctuation">:</span> 10em <span class="token important">!important</span><span class="token punctuation">;</span> 
+<span class="token property">-moz-border-radius</span><span class="token punctuation">:</span> 10em <span class="token important">!important</span><span class="token punctuation">;</span> 
+<span class="token property">border-radius</span><span class="token punctuation">:</span> 10em <span class="token important">!important</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token comment">/*滚动条凹槽的颜色，还可以设置边框属性 */</span>
+<span class="token selector">::-webkit-scrollbar-track-piece</span> <span class="token punctuation">{</span>
+<span class="token property">background-color</span><span class="token punctuation">:</span>transparent <span class="token important">!important</span><span class="token punctuation">;</span> 
+<span class="token property">-webkit-border-radius</span><span class="token punctuation">:</span> 0em <span class="token important">!important</span><span class="token punctuation">;</span> 
+<span class="token property">-moz-border-radius</span><span class="token punctuation">:</span> 0em <span class="token important">!important</span><span class="token punctuation">;</span> 
+<span class="token property">border-radius</span><span class="token punctuation">:</span> 0em <span class="token important">!important</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token comment">/*滚动条鼠标移上去*/</span>
+<span class="token selector">::-webkit-scrollbar-thumb:hover</span> <span class="token punctuation">{</span>
+<span class="token property">background-color</span><span class="token punctuation">:</span>#bbb <span class="token important">!important</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+
+//navbar字体大小
+.navbar .links
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 15.5px <span class="token important">!important</span><span class="token punctuation">;</span>
+
+//容器样式
+.theorem
+  margin 1rem 0
+  padding .1rem 1.5rem
+  border-radius 0.4rem
+  background-color #c9daea61
+  .title
+    font-weight bold
+.custom-block
+  &amp;.right
+    color <span class="token function">transparentify</span><span class="token punctuation">(</span>$textColor<span class="token punctuation">,</span> 0.4<span class="token punctuation">)</span>
+    font-size 0.9rem
+    text-align right
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br></div></div></details> <h2 id="_6-在每个代码块的左侧显示行号"><a href="#_6-在每个代码块的左侧显示行号" class="header-anchor">#</a> 6. 在每个代码块的左侧显示行号</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">markdown</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">lineNumbers</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="_7-文章添加具体时间-方便排序"><a href="#_7-文章添加具体时间-方便排序" class="header-anchor">#</a> 7. 文章添加具体时间，方便排序</h2> <div class="language-md line-numbers-mode"><pre class="language-md"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 烤鸭的做法
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token string">'2022-12-12 01:00:00'</span></span>
+<span class="token punctuation">---</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="_8-设置全局作者姓名"><a href="#_8-设置全局作者姓名" class="header-anchor">#</a> 8. 设置全局作者姓名</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// author</span>
+    <span class="token literal-property property">author</span><span class="token operator">:</span> <span class="token string">'linshanzeng'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="_9-备案信息和项目开始时间"><a href="#_9-备案信息和项目开始时间" class="header-anchor">#</a> 9. 备案信息和项目开始时间</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 备案</span>
+    <span class="token comment">// record: 'ICP 备案文案',</span>
+    <span class="token comment">// recordLink: 'ICP 备案指向链接',</span>
+    <span class="token comment">// cyberSecurityRecord: '公安部备案文案',</span>
+    <span class="token comment">// cyberSecurityLink: '公安部备案指向链接',</span>
+    <span class="token comment">// 项目开始时间，只填写年份</span>
+    <span class="token literal-property property">startYear</span><span class="token operator">:</span> <span class="token string">'2022'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="_10-最后更新时间"><a href="#_10-最后更新时间" class="header-anchor">#</a> 10.最后更新时间</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">lastUpdated</span><span class="token operator">:</span> <span class="token string">'Last Updated'</span><span class="token punctuation">,</span> <span class="token comment">// string | boolean</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="_11-git-仓库和编辑链接"><a href="#_11-git-仓库和编辑链接" class="header-anchor">#</a> 11.Git 仓库和编辑链接</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 假定是 GitHub. 同时也可以是一个完整的 GitLab URL</span>
+    <span class="token literal-property property">repo</span><span class="token operator">:</span> <span class="token string">'linshanzeng/linshanzeng.github.io'</span><span class="token punctuation">,</span>
+    <span class="token comment">// repoLabel: '查看源码',</span>
+    <span class="token comment">// 假如你的文档仓库和项目本身不在一个仓库：</span>
+    <span class="token literal-property property">docsRepo</span><span class="token operator">:</span> <span class="token string">'linshanzeng/linshanzeng.github.io'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 假如文档不是放在仓库的根目录下：</span>
+    <span class="token literal-property property">docsDir</span><span class="token operator">:</span> <span class="token string">'docs'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 假如文档放在一个特定的分支下：</span>
+    <span class="token literal-property property">docsBranch</span><span class="token operator">:</span> <span class="token string">'main'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 默认是 false, 设置为 true 来启用</span>
+    <span class="token literal-property property">editLinks</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 默认为 &quot;Edit this page&quot;</span>
+    <span class="token literal-property property">editLinkText</span><span class="token operator">:</span> <span class="token string">'在GitHub上编辑此页！'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="_12-展示分页"><a href="#_12-展示分页" class="header-anchor">#</a> 12.展示分页</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'@vuepress-reco/vuepress-plugin-pagation'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">'perPage'</span><span class="token operator">:</span> <span class="token number">4</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="_13-动态标题"><a href="#_13-动态标题" class="header-anchor">#</a> 13.动态标题</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;dynamic-title&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">showIcon</span><span class="token operator">:</span> <span class="token string">&quot;vuepress/smile.ico&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">showText</span><span class="token operator">:</span> <span class="token string">&quot;(/≧▽≦/)欢迎帅哥美女！&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">hideIcon</span><span class="token operator">:</span> <span class="token string">&quot;vuepress/cry.ico&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">hideText</span><span class="token operator">:</span> <span class="token string">&quot;(●—●)呜呜，不要走嘛！！&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">recoverTime</span><span class="token operator">:</span> <span class="token number">2000</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="_14-复制代码"><a href="#_14-复制代码" class="header-anchor">#</a> 14.复制代码</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;vuepress-plugin-nuggets-style-copy&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">copyText</span><span class="token operator">:</span> <span class="token string">&quot;复制代码&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">tip</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">&quot;复制成功!&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="参考链接"><a href="#参考链接" class="header-anchor">#</a> 参考链接</h2> <ul><li><a href="https://vuepress-theme-reco.recoluan.com/views/1.x/blog.html" target="_blank" rel="noopener noreferrer"><strong>vuepress-theme-reco分类和标签</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://vuepress-theme-reco.recoluan.com/views/other/reco-optimization.html" target="_blank" rel="noopener noreferrer"><strong>vuepress-theme-reco个人向优化</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://github.com/mqyqingfeng/Blog/issues/270" target="_blank" rel="noopener noreferrer"><strong>VuePress 博客优化之增加 Vssue 评论功能</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></section> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/linshanzeng/linshanzeng.github.io/edit/main/docs/views/action/hello-blog2.md" target="_blank" rel="noopener noreferrer">在GitHub上编辑此页！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2022/4/7 22:02:06</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_1-添加时间轴" class="sidebar-link reco-side-_1-添加时间轴" data-v-cb1513f6>1.添加时间轴</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_2-移动端优化" class="sidebar-link reco-side-_2-移动端优化" data-v-cb1513f6>2.移动端优化</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_3-首页配置" class="sidebar-link reco-side-_3-首页配置" data-v-cb1513f6>3.首页配置</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_4-暗色模式适配" class="sidebar-link reco-side-_4-暗色模式适配" data-v-cb1513f6>4.暗色模式适配</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_5-修改主题样式" class="sidebar-link reco-side-_5-修改主题样式" data-v-cb1513f6>5.修改主题样式</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_6-在每个代码块的左侧显示行号" class="sidebar-link reco-side-_6-在每个代码块的左侧显示行号" data-v-cb1513f6>6. 在每个代码块的左侧显示行号</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_7-文章添加具体时间-方便排序" class="sidebar-link reco-side-_7-文章添加具体时间-方便排序" data-v-cb1513f6>7. 文章添加具体时间，方便排序</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_8-设置全局作者姓名" class="sidebar-link reco-side-_8-设置全局作者姓名" data-v-cb1513f6>8. 设置全局作者姓名</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_9-备案信息和项目开始时间" class="sidebar-link reco-side-_9-备案信息和项目开始时间" data-v-cb1513f6>9. 备案信息和项目开始时间</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_10-最后更新时间" class="sidebar-link reco-side-_10-最后更新时间" data-v-cb1513f6>10.最后更新时间</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_11-git-仓库和编辑链接" class="sidebar-link reco-side-_11-git-仓库和编辑链接" data-v-cb1513f6>11.Git 仓库和编辑链接</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_12-展示分页" class="sidebar-link reco-side-_12-展示分页" data-v-cb1513f6>12.展示分页</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_13-动态标题" class="sidebar-link reco-side-_13-动态标题" data-v-cb1513f6>13.动态标题</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#_14-复制代码" class="sidebar-link reco-side-_14-复制代码" data-v-cb1513f6>14.复制代码</a></li><li class="level-2" data-v-cb1513f6><a href="/views/action/hello-blog2.html#参考链接" class="sidebar-link reco-side-参考链接" data-v-cb1513f6>参考链接</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.0c087b24.js" defer></script><script src="/assets/js/3.8c6a21b0.js" defer></script><script src="/assets/js/1.3f8f6d7b.js" defer></script><script src="/assets/js/13.858bcd6d.js" defer></script>
+  </body>
+</html>
